@@ -10,7 +10,7 @@ Class DB {
     //构造函数
     public function __construct() {
         $this->time = $this->microtime_float();
-        $this->connect("sqld.duapp.com:4050", "db840b49944b48008bee1e09b434cd71","53a60f5aa75348638f0b849b61bc0355", "ExLcEguuwvorptHphEmo");
+        $this->connect("localhost:3306", "db840b49944b48008bee1e09b434cd71","53a60f5aa75348638f0b849b61bc0355", "ExLcEguuwvorptHphEmo");
 
     }
 
