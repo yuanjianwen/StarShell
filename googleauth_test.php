@@ -16,7 +16,7 @@
 
 
   $qrCodeUrl = $ga->getQRCodeGoogleUrl('www.tianxingziben.vip', $secret); //第一个参数是"标识",第二个参数为"安全密匙SecretKey" 生成二维码信息
-  echo "Google Charts URL for the QR-Code: ".$qrCodeUrl."\n\n"; //Google Charts接口 生成的二维码图片,方便手机端扫描绑定安全密匙SecretKey
+  echo "Google Charts URL for the QR-Code: ".file_get_contents($qrCodeUrl)."\n\n"; //Google Charts接口 生成的二维码图片,方便手机端扫描绑定安全密匙SecretKey
 
 
   $oneCode = $ga->getCode($secret); //服务端计算"一次性验证码"
